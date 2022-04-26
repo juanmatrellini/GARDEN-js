@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Css/IndexLogin.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" async></script>
+    <script src="/Javascript/DomLogin.js" async></script>
+    <script src="/Javascript/Usuarios.js" async></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">Inicia Sesión</div>
+        <div class="title signup">Registrate</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slider" id="login" checked />
+          <input type="radio" name="slider" id="signup" />
+          <label for="login" class="slide login">Login</label>
+          <label for="signup" class="slide signup">Sign Up</label>
+          <div class="slide-tab"></div>
+        </div>
+        <div class="form-inner">
+          <form action="#" class="login" id="formSession">
+            <div class="field">
+              <input
+                type="text"
+                id="userLogin"
+                placeholder="Username"
+                required
+              />
+            </div>
+            <div class="field">
+              <input
+                type="password"
+                id="passwordLogin"
+                placeholder="Contraseña"
+                required
+              />
+            </div>
+            <div class="pass-link">
+              <a href="#">Olvidaste tu contraseña?</a>
+            </div>
+            <div class="field">
+              <input type="submit" id="iniciarBtn" value="Iniciar Sesión" />
+            </div>
+            <p id="loginParagraph"></p>
+            <div class="signup-link">
+              Aún no tienes una cuenta? <a href="#">Registrate ya!</a>
+            </div>
+          </form>
+          <form action="#" class="signup" id="formUp">
+            <div class="field">
+              <input
+                type="text"
+                id="usernameUp"
+                placeholder="Username"
+                required
+              />
+            </div>
+            <div class="field">
+              <input
+                type="password"
+                id="passwordUp"
+                placeholder="Contraseña"
+                required
+              />
+            </div>
+            <div class="field">
+              <input
+                type="password"
+                id="passwordUpConfirm"
+                placeholder="Confirmar Contraseña"
+                required
+              />
+            </div>
+            <div class="field">
+              <input type="submit" id="upBtn" value="Registrarme" />
+            </div>
+            <p id="signParagraph"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

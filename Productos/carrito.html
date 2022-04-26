@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GARDEN - Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="/Javascript/cardsFilter.js" async></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" async></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" async></script>
+    <script src="https://kit.fontawesome.com/58d8442d2f.js" crossorigin="anonymous" async></script>
+
+    <script src="/Javascript/app.js" async></script>
+    <link rel="stylesheet" href="../Css/App.css">
+  </head>
+  <body>
+    <header>
+      <nav class="header">
+          <div class="logo">
+              <h1>GARDEN</h1>
+          </div>
+          <div class="navegator">
+            <i id="cartIcon" class="cartIcon fa-solid fa-cart-shopping"></i>
+            <p id="cartCount" class="cartCount">0</p>
+          </div>
+          <div class="cartContainer" id="cartContainer">
+            <h2>Total: <strong class="priceTotal">0</strong> $</h2>
+          </div>
+      </nav>
+    </header>
+    <div id="checkOut" class="checkOut"></div>
+    <main class="mainCarrito">
+      <div class="container filter">
+        <h4>Filtrar productos</h4>
+        <div class="contentSelect" name="productoFilter" action="" id="productFilter">
+            <select name="filter" id="filter">
+            <option id="all" value="ALL">Todos los Productos</option>
+            <option id="gins" value="GINS">GINS</option>
+            <option id="minibox" value="MINIBOX">MINIBOX</option>
+            <option id="boxMadera" value="BOXMADERA">BOX de MADERA</option>
+            <option id="accesorio" value="ACCESORIOS">ACCESORIOS</option>
+            <option id="tonica" value="TONICAS">TONICAS</option>
+          </select>
+          <i></i>
+        </div>
+      </div>
+      </div>
+      <div class="container">
+        <div class="row" id="cards"></div>
+        <table class="table">
+          
+          <tbody id="items"></tbody>
+          
+        </table>
+      </div>
+
+      
+    </main>
+    <footer class="created">
+        <h2>Created by Juanma Trellini</h2>
+    </footer>
+  </body>
+</html>
