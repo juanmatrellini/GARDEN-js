@@ -108,9 +108,10 @@ const loadCheck = () => {
     const divCheck = document.createElement('div');
     divCheck.classList.add('check');
     divCheck.innerHTML = `
+        <h1>¡Hola ${userGuest}!</h1>
         <h2>Su orden de compra es de $ ${costoTotal}</h2>
         <h3 class="factura">Pronto recibirá la factura en su correo para que pueda completar el pago.</h3>
-        <h4>MUCHAS GRACIAS <h1>${userGuest}</h1></h4>
+        <h4>MUCHAS GRACIAS</h4>
         <h3 class="logoCheck">GARDEN</h3>
     `;
 
@@ -118,7 +119,7 @@ const loadCheck = () => {
 }
 
 function inicio () {
-    window.location.href = "../ingresoWeb.html";
+    window.location.href = "../index.html";
 }
 
 function checkFinal  () {
