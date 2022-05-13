@@ -4,14 +4,14 @@
       "id": 1,
       "tipo": "gin",
       "title": "GIN BOSQUE",
-      "file": "../Imag/bosque1.jpg"
+      "file": "./Imag/bosque1.jpg"
     },
     {
       "precio": 2200,
       "id": 2,
       "tipo": "gin",
       "title": "GIN BUENOS AIRES",
-      "file": "../Imag/buenosaires.jpg"
+      "file": "/Imag/buenosaires.jpg"
     },
     {
       "precio": 2000,
